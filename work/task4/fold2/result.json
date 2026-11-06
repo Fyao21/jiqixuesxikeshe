@@ -1,0 +1,12 @@
+{
+  "fold": 2,
+  "best": {
+    "dice": 0.8320266429137909,
+    "epoch": 210
+  },
+  "epochs_trained": 220,
+  "seconds": 94.73504270000012,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "seed": 2220,
+  "validation_mode": "AMP EMA single view at threshold 0.5"
+}

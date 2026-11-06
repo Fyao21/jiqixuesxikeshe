@@ -1,0 +1,223 @@
+{
+  "selected_model": "heatmap_local_flip0",
+  "oof_rmse_pixels": 16.204656911120786,
+  "candidate_oof_rmse_pixels": {
+    "heatmap_local_flip0": 16.204656911120786,
+    "heatmap_local_flip1": 16.874924337175994,
+    "heatmap_global_flip0": 18.327490034337504,
+    "heatmap_global_flip1": 18.179467974695548,
+    "frozen_feature_ridge": 42.87056537711791,
+    "heatmap_ridge_mix_0.25": 33.819037820903254,
+    "heatmap_ridge_mix_0.5": 25.491022378474696,
+    "heatmap_ridge_mix_0.75": 18.87008436807799
+  },
+  "fold_rmse_pixels": [
+    6.542179621122665,
+    27.315912752453542,
+    10.557445403718111,
+    16.147591906974533,
+    12.057351328751233
+  ],
+  "validation": "Five group folds with identical decoded images kept together. For each training image only predictions from its held-out model are used. Small hyperparameter/readout selection uses these OOF results.",
+  "train_images": 80,
+  "test_images": 20,
+  "rows": 40,
+  "columns": [
+    "ImageID",
+    "value"
+  ],
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "fold_models": [
+    {
+      "fold": 0,
+      "seed": 2026,
+      "best": {
+        "rmse": 7.123154271003495,
+        "epoch": 35,
+        "variant": "raw"
+      },
+      "scores": {
+        "valid_local_tta0": 7.123154271003495,
+        "valid_global_tta0": 6.919998587731212,
+        "valid_local_tta1": 8.033132394099024,
+        "valid_global_tta1": 8.359208561897054
+      },
+      "epochs_completed": 85,
+      "training_seconds": 79.66728091239929,
+      "args": {
+        "stage": "train",
+        "folds": "0",
+        "seed": 2026,
+        "epochs": 180,
+        "batch_size": 8,
+        "lr": 0.001,
+        "encoder_lr": 2e-05,
+        "freeze_epochs": 8,
+        "patience": 50
+      },
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    },
+    {
+      "fold": 1,
+      "seed": 2026,
+      "best": {
+        "rmse": 27.30540558568258,
+        "epoch": 10,
+        "variant": "ema"
+      },
+      "scores": {
+        "valid_local_tta0": 27.30540558568258,
+        "valid_global_tta0": 33.13761931080215,
+        "valid_local_tta1": 29.484963432900773,
+        "valid_global_tta1": 34.603741698477556
+      },
+      "epochs_completed": 60,
+      "training_seconds": 49.82277584075928,
+      "args": {
+        "stage": "train",
+        "folds": "1,2,3,4",
+        "seed": 2026,
+        "epochs": 180,
+        "batch_size": 8,
+        "lr": 0.001,
+        "encoder_lr": 2e-05,
+        "freeze_epochs": 8,
+        "patience": 50
+      },
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    },
+    {
+      "fold": 2,
+      "seed": 2026,
+      "best": {
+        "rmse": 10.561511733605224,
+        "epoch": 45,
+        "variant": "raw"
+      },
+      "scores": {
+        "valid_local_tta0": 10.561511733605224,
+        "valid_global_tta0": 10.650066503126348,
+        "valid_local_tta1": 10.907093976329186,
+        "valid_global_tta1": 10.956289651975132
+      },
+      "epochs_completed": 95,
+      "training_seconds": 66.30096983909607,
+      "args": {
+        "stage": "train",
+        "folds": "1,2,3,4",
+        "seed": 2026,
+        "epochs": 180,
+        "batch_size": 8,
+        "lr": 0.001,
+        "encoder_lr": 2e-05,
+        "freeze_epochs": 8,
+        "patience": 50
+      },
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    },
+    {
+      "fold": 3,
+      "seed": 2026,
+      "best": {
+        "rmse": 16.13372162810882,
+        "epoch": 5,
+        "variant": "ema"
+      },
+      "scores": {
+        "valid_local_tta0": 16.13372162810882,
+        "valid_global_tta0": 15.670335100817564,
+        "valid_local_tta1": 15.162168812353066,
+        "valid_global_tta1": 12.658634531912117
+      },
+      "epochs_completed": 60,
+      "training_seconds": 35.106621980667114,
+      "args": {
+        "stage": "train",
+        "folds": "1,2,3,4",
+        "seed": 2026,
+        "epochs": 180,
+        "batch_size": 8,
+        "lr": 0.001,
+        "encoder_lr": 2e-05,
+        "freeze_epochs": 8,
+        "patience": 50
+      },
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    },
+    {
+      "fold": 4,
+      "seed": 2026,
+      "best": {
+        "rmse": 12.045378394885704,
+        "epoch": 65,
+        "variant": "ema"
+      },
+      "scores": {
+        "valid_local_tta0": 12.045378394885704,
+        "valid_global_tta0": 12.799338618981105,
+        "valid_local_tta1": 11.35445990935385,
+        "valid_global_tta1": 10.05454526271416
+      },
+      "epochs_completed": 115,
+      "training_seconds": 69.48998141288757,
+      "args": {
+        "stage": "train",
+        "folds": "1,2,3,4",
+        "seed": 2026,
+        "epochs": 180,
+        "batch_size": 8,
+        "lr": 0.001,
+        "encoder_lr": 2e-05,
+        "freeze_epochs": 8,
+        "patience": 50
+      },
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    }
+  ],
+  "final_inference": {
+    "precision": "float32",
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32": false,
+    "comparison": "independent repeat of deterministic FP32 outputs",
+    "independent_reproduction_passed": true,
+    "folds": [
+      {
+        "fold": 0,
+        "max_difference_original_pixels": 0.0
+      },
+      {
+        "fold": 1,
+        "max_difference_original_pixels": 0.0
+      },
+      {
+        "fold": 2,
+        "max_difference_original_pixels": 0.0
+      },
+      {
+        "fold": 3,
+        "max_difference_original_pixels": 0.0
+      },
+      {
+        "fold": 4,
+        "max_difference_original_pixels": 0.0
+      }
+    ]
+  },
+  "checkpoint_selection_note": "Fold training logs use AMP evaluation; final OOF/test predictions are recomputed with the inference precision recorded above.",
+  "training_seconds_sum": 300.3876299858093,
+  "invisible_training_examples": 0,
+  "visibility_note": "All 80 training labels are visible. No calibrated invisible detector can be validated from these data; this submission uses the localization models without an unvalidated zero-coordinate threshold.",
+  "test_accuracy_note": "Test labels are unavailable and Kaggle submission has not been made. OOF RMSE is a local validation result, not an official leaderboard score.",
+  "csv_checks": {
+    "all_template_ids_match": true,
+    "template_order_preserved": true,
+    "all_values_finite": true,
+    "all_coordinates_within_original_image": true,
+    "no_extra_index": true,
+    "clipped_image_count": 0
+  },
+  "csv_sha256": "1c5ddbabf770d7d3888f22b6af057a6789fd73ca35276743d297a048f4e08a7f",
+  "pretrained_weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "source_archive_sha256": "b0219911d7512062ebc00e53e9f49f375f0e73e2d4b034a9ce98dc51be799440"
+}

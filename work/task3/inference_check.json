@@ -1,0 +1,30 @@
+{
+  "precision": "float32",
+  "cudnn_deterministic": true,
+  "cudnn_benchmark": false,
+  "tf32": false,
+  "comparison": "independent repeat of deterministic FP32 outputs",
+  "independent_reproduction_passed": true,
+  "folds": [
+    {
+      "fold": 0,
+      "max_difference_original_pixels": 0.0
+    },
+    {
+      "fold": 1,
+      "max_difference_original_pixels": 0.0
+    },
+    {
+      "fold": 2,
+      "max_difference_original_pixels": 0.0
+    },
+    {
+      "fold": 3,
+      "max_difference_original_pixels": 0.0
+    },
+    {
+      "fold": 4,
+      "max_difference_original_pixels": 0.0
+    }
+  ]
+}

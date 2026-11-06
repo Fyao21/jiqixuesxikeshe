@@ -1,0 +1,53 @@
+{
+  "source_archive": "C:\\Users\\w2922\\Downloads\\2026task2.zip",
+  "train_count": 28275,
+  "test_count": 7065,
+  "label_mapping": {
+    "Angry": 0,
+    "Fear": 1,
+    "Happy": 2,
+    "Sad": 3,
+    "Surprise": 4,
+    "Neutral": 5
+  },
+  "class_counts": {
+    "0": 3963,
+    "1": 4097,
+    "2": 7192,
+    "3": 4862,
+    "4": 3202,
+    "5": 4959
+  },
+  "image_modes": {
+    "L": 35340
+  },
+  "image_sizes": {
+    "(48, 48)": 35340
+  },
+  "duplicate_train_images_beyond_first": 1194,
+  "duplicate_groups_with_conflicting_labels": 39,
+  "validation_split": "StratifiedGroupKFold, five folds, first fold, seed 42; pixel-identical images kept together",
+  "fit_count": 22608,
+  "validation_count": 5667,
+  "fit_class_counts": {
+    "0": 3176,
+    "1": 3217,
+    "2": 5707,
+    "3": 3938,
+    "4": 2569,
+    "5": 4001
+  },
+  "validation_class_counts": {
+    "0": 787,
+    "1": 880,
+    "2": 1485,
+    "3": 924,
+    "4": 633,
+    "5": 958
+  },
+  "csv_columns": [
+    "ID",
+    "Emotion"
+  ],
+  "source_archive_sha256": "d4ef90c8ab61426656ea93aa6daff3ca8d2cc1b91e64bfa5e9b1eb74d1437372"
+}

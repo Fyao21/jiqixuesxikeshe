@@ -1,0 +1,103 @@
+{
+  "dtype": "float32",
+  "deterministic_cudnn": true,
+  "tf32": false,
+  "independent_rerun_matches": true,
+  "folds": [
+    {
+      "fold": 0,
+      "compared_to_saved": true,
+      "comparisons": [
+        {
+          "view": 1,
+          "max_probability_difference": 0.0
+        },
+        {
+          "view": 4,
+          "max_probability_difference": 0.0
+        },
+        {
+          "view": 8,
+          "max_probability_difference": 0.0
+        }
+      ],
+      "checkpoint_sha256": "8244ae7d71638b5310bd16e58df0ddef13c624aba10a5f15566d56e087a1b284"
+    },
+    {
+      "fold": 1,
+      "compared_to_saved": true,
+      "comparisons": [
+        {
+          "view": 1,
+          "max_probability_difference": 0.0
+        },
+        {
+          "view": 4,
+          "max_probability_difference": 0.0
+        },
+        {
+          "view": 8,
+          "max_probability_difference": 0.0
+        }
+      ],
+      "checkpoint_sha256": "a3a5f6b6b303997e6cc3ab07fb57aa7c05b16fe8d066927d68d28dd2c0e7c518"
+    },
+    {
+      "fold": 2,
+      "compared_to_saved": true,
+      "comparisons": [
+        {
+          "view": 1,
+          "max_probability_difference": 0.0
+        },
+        {
+          "view": 4,
+          "max_probability_difference": 0.0
+        },
+        {
+          "view": 8,
+          "max_probability_difference": 0.0
+        }
+      ],
+      "checkpoint_sha256": "2e2ef83580fc0e21dd93cb4a1a4959b588eb1785dc86102e566e1e0b5ebaa423"
+    },
+    {
+      "fold": 3,
+      "compared_to_saved": true,
+      "comparisons": [
+        {
+          "view": 1,
+          "max_probability_difference": 0.0
+        },
+        {
+          "view": 4,
+          "max_probability_difference": 0.0
+        },
+        {
+          "view": 8,
+          "max_probability_difference": 0.0
+        }
+      ],
+      "checkpoint_sha256": "04547ba08653b258e9ce07c6b98de9ac8c078db9aca675fb81491d0212924f7f"
+    },
+    {
+      "fold": 4,
+      "compared_to_saved": true,
+      "comparisons": [
+        {
+          "view": 1,
+          "max_probability_difference": 0.0
+        },
+        {
+          "view": 4,
+          "max_probability_difference": 0.0
+        },
+        {
+          "view": 8,
+          "max_probability_difference": 0.0
+        }
+      ],
+      "checkpoint_sha256": "a6c562b69e7a3190c68eac240508d70dc67dcb1f54a83eebd0eb03454a40c195"
+    }
+  ]
+}

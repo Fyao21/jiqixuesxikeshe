@@ -1,0 +1,33 @@
+{
+  "config": {
+    "mode": "full",
+    "epochs": 40,
+    "schedule_epochs": 70,
+    "batch_size": 256,
+    "width": 32,
+    "seed": 42,
+    "lr": 0.08,
+    "patience": 18,
+    "mean": 0.5069565773010254,
+    "std": 0.25513729453086853,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch": "2.7.1+cu126",
+    "cuda_runtime": "12.6",
+    "fit_count": 28275,
+    "validation_count": 0,
+    "architecture": "18-layer residual CNN, width 32, grayscale 48x48, small-image stem",
+    "label_order": [
+      "Angry",
+      "Fear",
+      "Happy",
+      "Sad",
+      "Surprise",
+      "Neutral"
+    ]
+  },
+  "training_seconds": 1051.9661457538605,
+  "epochs_completed": 40,
+  "use_flip_tta": true,
+  "validation_accuracy_of_selection_run": 0.6761955179107111,
+  "note": "Final model retrained on all training labels. Selection-run validation accuracy is not a final-model or test score."
+}

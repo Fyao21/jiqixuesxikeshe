@@ -1,0 +1,29 @@
+{
+  "fold": 0,
+  "seed": 2026,
+  "best": {
+    "rmse": 7.123154271003495,
+    "epoch": 35,
+    "variant": "raw"
+  },
+  "scores": {
+    "valid_local_tta0": 7.123154271003495,
+    "valid_global_tta0": 6.919998587731212,
+    "valid_local_tta1": 8.033132394099024,
+    "valid_global_tta1": 8.359208561897054
+  },
+  "epochs_completed": 85,
+  "training_seconds": 79.66728091239929,
+  "args": {
+    "stage": "train",
+    "folds": "0",
+    "seed": 2026,
+    "epochs": 180,
+    "batch_size": 8,
+    "lr": 0.001,
+    "encoder_lr": 2e-05,
+    "freeze_epochs": 8,
+    "patience": 50
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}

@@ -1,0 +1,94 @@
+{
+  "config": {
+    "mode": "validate",
+    "epochs": 70,
+    "batch_size": 256,
+    "width": 32,
+    "seed": 42,
+    "lr": 0.08,
+    "patience": 18,
+    "mean": 0.5067501068115234,
+    "std": 0.2553202509880066,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch": "2.7.1+cu126",
+    "fit_count": 22608,
+    "validation_count": 5667,
+    "architecture": "18-layer residual CNN, width 32, grayscale 48x48, small-image stem",
+    "label_order": [
+      "Angry",
+      "Fear",
+      "Happy",
+      "Sad",
+      "Surprise",
+      "Neutral"
+    ]
+  },
+  "training_seconds": 1255.9141030311584,
+  "epochs_completed": 58,
+  "best": {
+    "accuracy": 0.6761955179107111,
+    "epoch": 40,
+    "variant": "ema"
+  },
+  "validation_accuracy": 0.6761955179107111,
+  "validation_flip_tta_accuracy": 0.6777836597847186,
+  "use_flip_tta": true,
+  "confusion_matrix": [
+    [
+      459,
+      82,
+      32,
+      104,
+      11,
+      99
+    ],
+    [
+      107,
+      415,
+      23,
+      171,
+      69,
+      95
+    ],
+    [
+      21,
+      33,
+      1292,
+      33,
+      31,
+      75
+    ],
+    [
+      95,
+      90,
+      30,
+      530,
+      7,
+      172
+    ],
+    [
+      22,
+      85,
+      24,
+      13,
+      470,
+      19
+    ],
+    [
+      47,
+      30,
+      67,
+      124,
+      15,
+      675
+    ]
+  ],
+  "class_recall": [
+    0.5832274459974587,
+    0.4715909090909091,
+    0.87003367003367,
+    0.5735930735930735,
+    0.7424960505529226,
+    0.7045929018789144
+  ]
+}

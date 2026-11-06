@@ -1,0 +1,97 @@
+{
+  "file": "submission.csv",
+  "rows": 7065,
+  "columns": [
+    "ID",
+    "Emotion"
+  ],
+  "sha256": "f73222b648f4e3254c21082d4db08bdf9116a42ca867fdd5e18b0060852a6efd",
+  "all_template_and_test_ids_matched": true,
+  "template_order_preserved": true,
+  "no_duplicate_or_missing_ids": true,
+  "all_labels_in_0_to_5": true,
+  "no_extra_index_column": true,
+  "prediction_counts": {
+    "0": 915,
+    "1": 856,
+    "2": 1804,
+    "3": 1220,
+    "4": 782,
+    "5": 1488
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.7.1+cu126",
+  "cuda_runtime": "12.6",
+  "model": "18-layer residual CNN, width 32, grayscale 48x48, small-image stem",
+  "label_order": [
+    "Angry",
+    "Fear",
+    "Happy",
+    "Sad",
+    "Surprise",
+    "Neutral"
+  ],
+  "validation_training_samples": 22608,
+  "validation_samples": 5667,
+  "best_validation_epoch": 40,
+  "validation_accuracy_without_tta": 0.6761955179107111,
+  "validation_accuracy_with_horizontal_flip_tta": 0.6777836597847186,
+  "validation_confusion_matrix": [
+    [
+      459,
+      82,
+      32,
+      104,
+      11,
+      99
+    ],
+    [
+      107,
+      415,
+      23,
+      171,
+      69,
+      95
+    ],
+    [
+      21,
+      33,
+      1292,
+      33,
+      31,
+      75
+    ],
+    [
+      95,
+      90,
+      30,
+      530,
+      7,
+      172
+    ],
+    [
+      22,
+      85,
+      24,
+      13,
+      470,
+      19
+    ],
+    [
+      47,
+      30,
+      67,
+      124,
+      15,
+      675
+    ]
+  ],
+  "validation_grouping": "StratifiedGroupKFold, five folds, first fold, seed 42; pixel-identical images kept together",
+  "final_training_samples": 28275,
+  "final_training_epochs": 40,
+  "final_schedule_horizon": 70,
+  "final_horizontal_flip_tta": true,
+  "total_training_seconds": 2307.880248785019,
+  "source_archive_sha256": "d4ef90c8ab61426656ea93aa6daff3ca8d2cc1b91e64bfa5e9b1eb74d1437372",
+  "score_note": "Validation scores come from the grouped holdout selection run. The final model used all training labels. Kaggle test accuracy has not been measured because this CSV has not been submitted."
+}

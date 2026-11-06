@@ -1,0 +1,24 @@
+{
+  "mode": "validate",
+  "epochs": 70,
+  "batch_size": 256,
+  "width": 32,
+  "seed": 42,
+  "lr": 0.08,
+  "patience": 18,
+  "mean": 0.5067501068115234,
+  "std": 0.2553202509880066,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.7.1+cu126",
+  "fit_count": 22608,
+  "validation_count": 5667,
+  "architecture": "18-layer residual CNN, width 32, grayscale 48x48, small-image stem",
+  "label_order": [
+    "Angry",
+    "Fear",
+    "Happy",
+    "Sad",
+    "Surprise",
+    "Neutral"
+  ]
+}
